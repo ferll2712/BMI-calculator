@@ -16,11 +16,9 @@ The calculator estimates adult body mass index (BMI) from weight in kilograms an
 
 ![Calculator showing a BMI of 22.9 with the Healthy weight category](docs/screenshot.png)
 
-## Project materials
+## Project report
 
-- [Short report (PDF)](docs/bmi-report.pdf)
-- [Rubric checklist](docs/rubric-checklist.md)
-- [Presentation and GitHub Pages guide](docs/presentation-and-publishing.md)
+[Short report with five user stories and a diagram (PDF)](docs/bmi-report.pdf)
 
 ## Tools and sources
 
