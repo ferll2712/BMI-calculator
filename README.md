@@ -1,8 +1,8 @@
 # BMI Calculator
 
-Individual final project for CMPS 510 – Principles and Concepts of Software Engineering.
+This is my final project for CMPS 510, Principles and Concepts of Software Engineering.
 
-The calculator estimates adult body mass index (BMI) from weight in kilograms and height in meters. It shows the BMI and its category, and explains how to correct invalid measurements. The page works on desktop and mobile screens. It runs in the browser and does not store measurements.
+I chose a BMI calculator because I wanted to make a simple web page that works on a computer or phone. Enter your weight in kilograms and your height in meters to see your BMI and its adult category. If a measurement is invalid, the page shows what to correct. The calculator runs in your browser and does not save your measurements.
 
 ## Run it locally
 
@@ -24,5 +24,5 @@ The calculator estimates adult body mass index (BMI) from weight in kilograms an
 
 - HTML, CSS, and JavaScript build the page. The app uses no external libraries.
 - Chromium and Playwright were used for local browser checks. ReportLab was used to make the PDF.
-- OpenAI Codex helped build, test, and document the project.
+- I used OpenAI Codex to help build, test, and document my project.
 - The adult category thresholds come from the [CDC Adult BMI Calculator](https://www.cdc.gov/bmi/adult-calculator/).
