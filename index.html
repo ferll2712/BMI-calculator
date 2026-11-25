@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMI Calculator</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>BMI Calculator</h1>
+      <p>Estimate your adult body mass index using your weight and height.</p>
+    </header>
+
+    <section class="calculator" aria-label="Calculate your BMI">
+      <form id="bmi-form" novalidate>
+        <div class="measurements">
+          <div>
+            <label for="weight">Weight (kg)</label>
+            <input id="weight" type="number" inputmode="decimal" step="any"
+              placeholder="70" required aria-describedby="weight-error">
+            <p class="error" id="weight-error"></p>
+          </div>
+          <div>
+            <label for="height">Height (m)</label>
+            <input id="height" type="number" inputmode="decimal" step="any"
+              placeholder="1.75" required aria-describedby="height-error">
+            <p class="error" id="height-error"></p>
+          </div>
+        </div>
+        <button type="submit">Calculate BMI</button>
+      </form>
+
+      <div id="result" role="status" aria-atomic="true">
+        <p class="result-label">Your result</p>
+        <p id="summary">Enter your measurements to calculate your BMI.</p>
+        <p id="detail"></p>
+      </div>
+    </section>
+
+    <section class="guide" aria-labelledby="guide-heading">
+      <h2 id="guide-heading">Adult BMI categories</h2>
+      <dl>
+        <div><dt>Underweight</dt><dd>Below 18.5</dd></div>
+        <div><dt>Healthy weight</dt><dd>18.5 to below 25</dd></div>
+        <div><dt>Overweight</dt><dd>25 to below 30</dd></div>
+        <div><dt>Obesity</dt><dd>30 or higher</dd></div>
+      </dl>
+      <p>BMI is a screening measure. A full health assessment uses other information too.</p>
+      <a href="https://www.cdc.gov/bmi/adult-calculator/">Learn about adult BMI from the CDC</a>
+    </section>
+  </main>
+</body>
+</html>
