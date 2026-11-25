@@ -2,7 +2,7 @@
 
 This is my final project for CMPS 510, Principles and Concepts of Software Engineering.
 
-I chose a BMI calculator because I wanted to make a simple web page that works on a computer or phone. Enter your weight in kilograms and your height in meters to see your BMI and its adult category. If a measurement is invalid, the page shows what to correct. The calculator runs in your browser and does not save your measurements.
+I chose a BMI calculator because I wanted to make a simple web page that works on a computer or phone. Choose **Metric** for kilograms and meters or **Imperial** for pounds, feet, and inches. The calculator shows your BMI and its adult category. If a measurement is invalid, the page shows what to correct. The calculator runs in your browser and does not save your measurements.
 
 ## Run it locally
 
@@ -12,7 +12,7 @@ I chose a BMI calculator because I wanted to make a simple web page that works o
    python3 -m http.server 8000 --bind 127.0.0.1
    ```
 2. Enter **70 kg** and **1.75 m**. Select **Calculate BMI** to see **22.9 · Healthy weight**.
-3. Change the height to **0** and select **Calculate BMI** again to see the validation message.
+3. Choose **Imperial** and enter **154 lb**, **5 ft**, and **9 in** to see **22.7 · Healthy weight**. Enter **0** in the inches field if your height is an exact number of feet. Switching systems clears the fields and the result.
 
 ![Calculator showing a BMI of 22.9 with the Healthy weight category](docs/screenshot.png)
 

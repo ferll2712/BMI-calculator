@@ -17,6 +17,13 @@
 
     <section class="calculator" aria-label="Calculate your BMI">
       <form id="bmi-form" novalidate>
+        <fieldset class="unit-picker">
+          <legend>Measurement system</legend>
+          <div class="unit-options">
+            <label><input type="radio" name="units" value="metric" checked><span>Metric</span></label>
+            <label><input type="radio" name="units" value="imperial"><span>Imperial</span></label>
+          </div>
+        </fieldset>
         <div class="measurements">
           <div>
             <label for="weight">Weight (kg)</label>
@@ -29,6 +36,12 @@
             <input id="height" type="number" inputmode="decimal" step="any"
               placeholder="1.75" required aria-describedby="height-error">
             <p class="error" id="height-error"></p>
+          </div>
+          <div id="inches-field" hidden>
+            <label for="inches">Additional height (in)</label>
+            <input id="inches" type="number" inputmode="decimal" step="any"
+              placeholder="9" required disabled aria-describedby="inches-error">
+            <p class="error" id="inches-error"></p>
           </div>
         </div>
         <button type="submit">Calculate BMI</button>

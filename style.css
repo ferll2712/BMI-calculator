@@ -111,3 +111,55 @@ a { color: #115e45; }
 @media (max-width: 30rem) {
   .measurements { grid-template-columns: 1fr; }
 }
+
+.unit-picker {
+  border: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.unit-picker legend {
+  padding: 0;
+  margin-bottom: .35rem;
+  font-weight: 650;
+}
+
+.unit-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .25rem;
+  padding: .25rem;
+  background: #e9f4ec;
+  border-radius: .65rem;
+}
+
+.unit-options label { position: relative; }
+
+.unit-options input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.unit-options span {
+  display: block;
+  padding: .45rem;
+  text-align: center;
+  border-radius: .45rem;
+  cursor: pointer;
+}
+
+.unit-options input:checked + span {
+  background: #176148;
+  color: white;
+}
+
+.unit-options input:focus-visible + span {
+  outline: 3px solid #116c75;
+  outline-offset: 2px;
+}
+
+@media (min-width: 30.01rem) {
+  .imperial .measurements { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
