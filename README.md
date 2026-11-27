@@ -21,6 +21,6 @@ I chose a BMI calculator because I wanted to make a simple web page that works o
 ## Tools and sources
 
 - HTML, CSS, and JavaScript build the page. The app uses no external libraries.
-- Chromium and Playwright were used for local browser checks. ReportLab was used to make the PDF.
-- I used OpenAI Codex to help build, test, and document my project.
+- Chromium and Playwright were used for local browser checks. 
+- I used Chatgpt to help me to learn, built and document my project.
 - The adult category thresholds come from the [CDC Adult BMI Calculator](https://www.cdc.gov/bmi/adult-calculator/).
